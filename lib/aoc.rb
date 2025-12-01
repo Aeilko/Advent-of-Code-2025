@@ -2,7 +2,7 @@ require 'open-uri'
 
 module AOC
 
-	YEAR = 2024
+	YEAR = 2025
 
 	module Day
 		# Settings
@@ -121,7 +121,6 @@ module AOC
 				"User-Agent" => "https://github.com/Aeilko/Advent-of-Code-#{AOC::YEAR}",
 				"Cookie" => "session=#{@session}",
 			]
-
 			content = URI.open(url, *headers).read
 			File.write(local_path, content, mode: "w")
 
