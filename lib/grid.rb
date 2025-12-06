@@ -1,6 +1,6 @@
 module Grid
 	def self.string_to_grid(inp)
-		return inp.lines.map{ |line| line.strip }
+		return inp.lines.map{ |line| line.strip.chars }
 	end
 
 	def self.get_neighbours(grid, x, y, include_coords = false)
